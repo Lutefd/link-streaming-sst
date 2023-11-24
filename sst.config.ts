@@ -11,9 +11,11 @@ export default {
   stacks(app) {
     app.stack(function Site({ stack }) {
       const site = new NextjsSite(stack, 'site', {
+        buildCommand: 'pnpm open-next build --streaming',
         experimental: {
           streaming: true,
         },
+
         timeout: 30,
       });
 
