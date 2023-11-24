@@ -12,7 +12,7 @@ export default function Home() {
       <SomeClientComponent>
         <SomeServerComponent />
       </SomeClientComponent>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense>
         <SomeSlowComponent2 />
       </Suspense>
     </main>
