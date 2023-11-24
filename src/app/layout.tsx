@@ -17,11 +17,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <nav className="w-full flex gap-2 justify-center items-center">
-        <Link href="/">Home</Link>
-        <Link href="/streaming2">Streaming</Link>
-      </nav>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <nav className="w-full flex gap-2 justify-center items-center">
+          <Link href="/">Home</Link>
+          <Link href="/streaming2">Streaming</Link>
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }
