@@ -18,10 +18,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav className="w-full flex gap-2 justify-center items-center">
-          <Link href="/">Home</Link>
-          <Link href="/streaming2">Streaming</Link>
-        </nav>
+        <div className="flex flex-col gap-4 w-full items-center justify-center">
+          <nav className="w-full flex gap-2 justify-center items-center">
+            <h1>Next/link navbar</h1>
+            <Link href="/">Home</Link>
+            <Link href="/streaming2">Streaming</Link>
+          </nav>
+          <div className="w-full flex gap-2 justify-center items-center">
+            <h1> a element navbar</h1>
+            <a href="/">Home</a>
+            <a href="/streaming2">Streaming</a>
+          </div>
+        </div>
         {children}
       </body>
     </html>
