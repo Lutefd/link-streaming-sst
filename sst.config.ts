@@ -5,7 +5,7 @@ export default {
   config(_input) {
     return {
       name: 'streaming-sst',
-      region: 'us-east-1',
+      region: 'sa-east-1',
     };
   },
   stacks(app) {
@@ -14,6 +14,7 @@ export default {
         experimental: {
           streaming: true,
         },
+        timeout: 30,
       });
 
       stack.addOutputs({
