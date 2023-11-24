@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import {
   SomeServerComponent,
-  SomeSlowComponent,
+  SomeSlowComponent2,
 } from '../_components/server-only';
 import { SomeClientComponent } from '../_components/client-component';
 import { Suspense } from 'react';
@@ -13,7 +13,7 @@ export default function Home() {
         <SomeServerComponent />
       </SomeClientComponent>
       <Suspense fallback={<div>Loading...</div>}>
-        <SomeSlowComponent />
+        <SomeSlowComponent2 />
       </Suspense>
     </main>
   );
